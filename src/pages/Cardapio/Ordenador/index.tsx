@@ -17,18 +17,18 @@ export default function Ordenador({ordenador, setOrdenador}: Props) {
     <button 
       className={classNames({
         [styles.ordenador]: true,
-        [styles["ordenador--ativo"]]: ordenador !== "",
+        [styles['ordenador--ativo']]: ordenador !== '',
       })} 
       onClick={() => setAberto(!aberto)}
       onBlur={() => setAberto(false)}
     >
-      <span>{nomeOrdenador || "Ordenar Por"}</span>
+      <span>{nomeOrdenador || 'Ordenar Por'}</span>
       {aberto ? <MdKeyboardArrowUp size={20}/> : <MdKeyboardArrowDown size={20}/>}
 
       <div 
         className={classNames({
           [styles.ordenador__options]: true,
-          [styles["ordenador__options--ativo"]]: aberto
+          [styles['ordenador__options--ativo']]: aberto
         })}
       >
         {opcoes.map((opcao) => (
@@ -42,5 +42,5 @@ export default function Ordenador({ordenador, setOrdenador}: Props) {
         ))}
       </div>
     </button>
-  )
+  );
 }

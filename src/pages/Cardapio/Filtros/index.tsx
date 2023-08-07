@@ -24,12 +24,12 @@ export default function Filtros( {filtro, setFiltro }: Props) {
           onClick={() => selecionarFiltro(opcao)}
           className={classNames({
             [styles.filtros__filtro]: true,
-            [styles["filtros__filtro--ativo"]]: filtro === opcao.id
+            [styles['filtros__filtro--ativo']]: filtro === opcao.id
           })}
         >
           {opcao.label}
         </button>
       ))}
     </div>
-  )
+  );
 }
