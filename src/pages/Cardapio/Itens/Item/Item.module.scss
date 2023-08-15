@@ -1,22 +1,21 @@
-@import "../../../../styles/breackpoints";
 @import "../../../../styles/variaveis";
-
+@import "../../../../styles/breackpoints";
 .item {
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  @media (min-width: $tablet_sm) and (max-width: $tablet) {
-    flex-direction: column;
-    align-items: center;
+  padding: 20px;
+  transition: .2s ease-in;
+  width: 90%;
+  &:hover {
+    background-color: $grey;
   }
   &__imagem {
     min-width: 240px;
     @media (max-width: $desktop_xsm) {
       width: 100%;
-    }
-    @media (min-width: $tablet_sm) and (max-width: $tablet) {
-      width: 50%;
-      margin: 0 auto;
     }
     img {
       border-radius: 8px;
@@ -29,7 +28,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 20px;
+    margin: 0 20px;
     @media (max-width: $desktop_xsm) {
       flex-direction: row;
       margin-top: 20px;
