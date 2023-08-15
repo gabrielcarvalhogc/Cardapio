@@ -4,12 +4,17 @@
 .footer {
   background-color: $red;
   display: flex;
-  justify-content: flex-end;
+  color: $light-grey;
+  justify-content: space-around;
+  align-items: center;
+  a {
+    color: $light-grey;
+  }
   padding: 10px $padding-horizontal;
-  @media (max-width: $desktop_xsm) {
+  @media (max-width: $mobile) {
   padding: 10px $padding-horizontal-mobile;
   }
-  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+  @media (min-width: $tablet_sm) and (max-width: $tablet) {
   padding: 10px $padding-horizontal-sm;
   }
   @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
