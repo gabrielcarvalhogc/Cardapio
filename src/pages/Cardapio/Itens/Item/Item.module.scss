@@ -6,9 +6,8 @@
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
   transition: .2s ease-in;
-  width: 90%;
+  width: 100%;
   &:hover {
     background-color: $grey;
   }
@@ -16,6 +15,11 @@
     min-width: 240px;
     @media (max-width: $desktop_xsm) {
       width: 100%;
+    }
+    @media (min-width: $tablet_sm) and (max-width: $tablet) {
+      min-width: none;
+      width: 250px;
+      margin: 0 auto;
     }
     img {
       border-radius: 8px;
@@ -28,7 +32,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 20px;
+    margin: 0 10px;
     @media (max-width: $desktop_xsm) {
       flex-direction: row;
       margin-top: 20px;

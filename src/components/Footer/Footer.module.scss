@@ -17,7 +17,7 @@
   @media (min-width: $tablet_sm) and (max-width: $tablet) {
   padding: 10px $padding-horizontal-sm;
   }
-  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
   padding: 10px $padding-horizontal-md;
   }
 }
