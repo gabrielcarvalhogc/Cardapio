@@ -1,3 +1,21 @@
+# Casa da Massa
+
+Bem-vindo à Casa da Massa, o seu refúgio gastronômico para uma autêntica experiência italiana. Situado em um charmoso e acolhedor ambiente, nosso restaurante é um pedaço da Itália no coração da cidade.
+
+## Descrição
+
+A página de um restaurante criada em React com TypeScript, com o foco no uso e aprendizado das bibliotecas `react-dom` e `react-router-dom`.
+
+## Recursos
+
+- **Tecnologia**: Utilizamos HTML, CSS, React e TypeScript para criar esta aplicação.
+- **Bibliotecas**: Para aprimorar a funcionalidade e a aparência, utilizamos as seguintes bibliotecas:
+  - `react-dom`
+  - `react-router-dom`
+  - `classNames`
+  - `react-icons`
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
